@@ -3,16 +3,16 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 const Article = (props) => {
-    const {title, image, description} = props.data
+    const {title, urlToImage, description, url, source} = props.data
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={image} />
+      <Card.Img variant="top" src={urlToImage} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>
           {description}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary" href={url} target="_blank">News from <b>{source.name}</b></Button>
       </Card.Body>
     </Card>
   );
