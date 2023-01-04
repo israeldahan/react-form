@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Articles from './components/Articles';
+import Articles from './components/Articles';
 import ArticlesFromService from './components/ArticlesFromService';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <ArticlesFromService />
+        {/* <Articles /> */}
       </header>
     </div>
   );

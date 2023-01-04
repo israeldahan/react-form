@@ -19,7 +19,7 @@ const Articles = () => {
                 setLoading(false);
             }
         }
-        fetchData(`https://newsapi.org/v2/everything?q=tesla&from=2022-11-29&sortBy=publishedAt&apiKey=6bd9cc4990674c61b79f5c98ea935eb9`);
+        fetchData(`https://newsapi.org/v2/everything?q=tesla&pageSize=4&apiKey=6bd9cc4990674c61b79f5c98ea935eb9`);
     }, []);
     if (loading) {
         return <p>Loading...</p>;
